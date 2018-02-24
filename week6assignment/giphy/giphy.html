@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HBO GIPHY</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/giphy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="assets/images/hbo-left.gif">
+  <img id="topImageR" src="assets/images/hbo-right.gif">
+  <h1>It's Not TV.<br>It's HBO...GIFs</h1>
+  <h4>Click the buttons to display GIFs of your favorite HBO shows and characters.<br>Click on the GIF to play and pause the image.<br>You can run your searches to add more buttons.</h4>
+</div>
+
+<form class="form-inline" id="hboQuery">
+  <div class="form-group">
+    <label for="searchInput">Search for a HBO Show or Character</label>
+    <input type="text" id="searchInput">
+  </div>
+  <input id="addSearch" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="search" data-search="Game of Thrones">Game of Thrones</button>
+      <button class="btn btn-primary" id="search" data-search="The Sopranos">The Sopranos</button>
+      <button class="btn btn-primary" id="search" data-search="The Wire">The Wire</button>
+      <button class="btn btn-primary" id="search" data-search="Westworld">Westworld</button>
+
+      <div id="searchResultsButtons"></div>
+    </div> 
+  </div> 
+</div> 
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="searchResultsArea"></div></span>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/giphy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
